@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Of Games || DevLoper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Josefin+Sans:ital,wght@1,700&family=Ubuntu:wght@300&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Java Script Links + Script -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+        function sendmail() {
+
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+
+            // var body = $('#body').val();
+
+            var Body = 'Name: ' + name + '<br>Email: ' + email + '<br>Subject: ' + subject + '<br>Message: ' + message;
+            //console.log(name, phone, email, message);
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "tempworldogamesemailsender@gmail.com",
+                Password: "EmailSender@DevLoper",
+                To: 'idontknowanything9593608061@gmail.com',
+                From: "tempworldogamesemailsender@gmail.com",
+                Subject: "New message on contact from " + name,
+                Body: Body
+            }).then(
+                message => {
+                    //console.log (message);
+                    if (message == 'OK') {
+                        alert('Your mail has been send. Thank you for connecting.');
+                    }
+                    else {
+                        console.error(message);
+                        alert('There is error at sending message. ')
+
+                    }
+
+                }
+            );
+
+
+
+        }
+        
+
+
+    </script>
+    </script>
+    <!-- NavBar -->
+    <nav id="navbar">
+        <div id="logo">
+
+            <a href="#home" id="logoA"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Follow Me</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to World Of Games By @DevLoper</h1>
+        <p>Hello Viewers, This Is DevLoper And Welcome To World Of Games. </p>
+        <p>Here I Will Provide You Some My Own Made Games And Some Paid Games For Free.</p>
+        <a href="HTML/downloads.html"><button class="btn" id="homePageBTN">Download Now!</button></a>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <!-- <img src="img/1.png" alt=""> -->
+                <h2 class="h-secondary center">Show Requirements</h2>
+                <p class="center">I Show Minimum System Requirements And Also Recommand The Requirements Which Handle
+                    The Perticular Game Smoothly. By Doing This I Hope I Can Achieve A Very Friendly User Interface Form
+                    You About The Game Provided By Me. Like As A Example Let Minimum System Requirements Of The Most
+                    Popular AAA Game Grand Theft Auto V Is Intel Dual Core Processor Like Intel i3,platinum(r)
+                    Series,etc. But My Recommandations Is Intel(R) Pentium(R) CPU G2030 And A 120 GB SSD Where You
+                    Should Have GTA V And Only Your OS. By That You Can GTA V Very Smoothly With Some Somftwere
+                    Adjustments. And Change The In Game Settings To Low[In The Point Of View Of Processors].</p>
+            </div>
+            <div class="box">
+                <!-- <img src="img/2.png" alt=""> -->
+                <h2 class="h-secondary center">Providing A Safe Downloadable File</h2>
+                <p class="center">I Povide The Most Safe Downloadable File. I Can Say This Confidently Because First I
+                    Test It Before Providing And Then I Release It On Google Drive [Yes, I Will Provide You All My Files
+                    In Google Drive Because It Is The Most Safe Site To Share Something]. And As Some Of My Provided
+                    Files Will Be Cracked So, You Can Trustly Install It After Turning Off Your Windows Defender[For
+                    Only Windows 10,11.. Users] And Other Antiviruses. Because Your PC Detects Cracked Files As A Virus.
+                    But It Is Safe.</p>
+            </div>
+            <div class="box">
+                <!-- <img src="img/3.png" alt=""> -->
+                <h2 class="h-secondary center">Providing Highly Compressed/ Setup Files</h2>
+                <p class="center">I Will Provide You The Most Highly Compressed Version Of Large Files Like As Example
+                    14GB GTA V In Only 500MB[(Notice!) I Will Provide This 14GB File As Parts Like 11 ,900 MB Files Or
+                    6 ,900MB Files,etc]. I Am Going To Do This Because I Know Some Of My Viewers Use Mobile Internet For
+                    Downloading Big Files And Waste Their Time On Some Spammer/Clickbaiters. Whose Links Are Full Of Ads
+                    And Files Are Fake.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Follow Me!</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/instawithLogo-removebg-preview.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/ytWithBG-removebg-preview.png" alt="Our Client">
+            </div>
+
+            <div class="client-item">
+                <img src="img/facebook.jfif" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/twitter-removebg-preview.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="javascript:sendmail()" method="post">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject: </label>
+                    <input type="text" name="name" id="subject" placeholder="Enter your Purpose">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+        </div>
+        <div id="actionBTNs">
+            <input type="reset" value="Reset Now" id="ResetBTN">
+            <input type="submit" value="Submit Now" id="SubmitBTN">
+        </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; @DevLoper. All rights Are reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

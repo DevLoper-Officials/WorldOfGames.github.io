@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Cause 2</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    background: url('../img/GAMES/jc2img1.jpg') no-repeat center center/cover;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#btn:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    font-weight: 1000;
+    box-shadow: 10px 10px 10px rgb(82, 0, 0);
+}
+.btn2:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    font-weight: 1000;
+    box-shadow: 10px 10px 10px rgb(82, 0, 0);
+}
+.banner2{
+    display: flex;
+    margin: auto;
+    font-size: 45px;
+    font-family: cursive;
+    text-align: center;
+}
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+
+} 
+.h-secondarycenter{
+    text-align: center;
+    font-size: 37px;
+    font-family: monospace;
+}
+@media screen and (max-width: 1296px){
+
+    #services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="downloads.html"><button id="btn">Go Back</button></a>
+        <div class="banner2"><p>Just Cause 2</p>
+        </div>
+        </header>
+
+    <section id="services-container">
+        <div id="services">
+            <div class="box">
+                <h2 class="h-secondarycenter">Recommands</h2>
+                <p class="center">Here In This Section,
+                    You Are Going To Know
+                    What Are The Minimum And Recommanded              
+                    System Requirements Of The
+                    Game Cube Runner.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="jc2sysrequire.html"><button class="btn2">Read</button></a>
+                </div>
+                    <div class="box">
+                        <h2 class="h-secondarycenter">PC Version Link</h2>
+                        <p class="center">Here In This Section,
+                            You Are Going To Find
+                            The Link Of The Game Cube Runner PC
+                            Please Download It After Reading Requirements
+                            Or It Will Not Work.
+                        </p>
+                        <br>
+                        <a href="jc2links.html" target="_blank"><button class="btn2">Download</button></a>
+                    </div>
+        </div>
+    </section>
+
+</body>
+</html>
